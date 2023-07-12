@@ -13,13 +13,13 @@ public class Equality {
 
     private static int time_to_equality(int[] array, int size) {
         int max_element=array[0];
-        int arrar_sum=0;
+        int array_sum=0;
         for(int i=0;i<size;i++){
-            arrar_sum+=array[i];
+            array_sum+=array[i];
             if(array[i]>max_element){
                 max_element=array[i];
             }
         }
-        return arrar_sum-max_element;
+        return (max_element*(size-1))-(array_sum-max_element);
     }
 }
